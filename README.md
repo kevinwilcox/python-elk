@@ -21,4 +21,8 @@ It also contains a sample logstash configuration to load that YAML file into a R
 
 Note it would take very few changes to retrieve computer objects to a second YAML file and create another table whenever a Workstation field is seen...
 
+The logstash configuration file is named so that it may be included as part of a custom data flow. Most people will only need the filter { } section. The input { } and output { } sections are there for folks who want to test the config as it is outlined in:
+
+https://opensecgeek.blogspot.com/2018/11/enriching-logs-with-active-directory.html
+
 The script requires the ldap3 package for python, which can be installed via pip/pip3. No additional logstash plugins need to be installed.
